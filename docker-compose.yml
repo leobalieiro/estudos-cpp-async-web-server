@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME}_app
+    volumes:
+      - ./src:/app
+    ports:
+      - "${SERVER_PORT}:8080"
+    stdin_open: true
+    tty: true
