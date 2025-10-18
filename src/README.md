@@ -1,24 +1,21 @@
-**Compila codigo:**
+**Compila e executa com cmake:**
+
+```
+make run
+```
+
+
+**Compila codigo (manualmente):**
 
 ```
 g++ -std=c++11 -Wall -O2 -o /app/server /app/server.cpp -lcpprest -lboost_system -lssl -lcrypto -lpthread;
 ```
 
-
-**Roda servidor:**
+**Roda servidor (manualmente):**
 
 ```
 exec /app/server
 ```
-
-
-**Mata processo:**
-
-```
-pkill server && echo "✅ Servidor parado" || echo "❌ Servidor não estava rodando"
-```
-
-
 
 ```
 # No container Ubuntu/Debian
